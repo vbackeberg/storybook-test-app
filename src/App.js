@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Button } from "./stories/Button";
+import { Header } from "./stories/Header";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <header className="App-header">React x Storybook</header> */}
+      <Header
+            user={{
+              name: "Jane Doe",
+            }}
+            onLogin={() => {}}
+            onLogout={() => {}}
+          ></Header>
+
+      <body className="App-body">
+        <div className="body-title">Our Storybook Components</div>
+
+        <div className="storybook-components">
+          <Button primary label="primary button"></Button>
+      
+        </div>
+      </body>
     </div>
   );
 }
