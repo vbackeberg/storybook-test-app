@@ -13,7 +13,7 @@
   flex-direction: column;
 }
 
-.App-body {
+.content {
   margin-top: 16px;
   flex: 1 0 0;
 
@@ -21,7 +21,7 @@
   flex-direction: column;
 }
 
-.body-title {
+.title {
   flex: 1 0 64px;
   font-family: 'Milky Cow';
   font-size: 6em;
